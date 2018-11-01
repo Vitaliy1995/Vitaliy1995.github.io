@@ -72,12 +72,12 @@
 
 	<main class="main">
 
-        <section class="presentation" style="background-image: url(img/webtma-background.jpg);">
+        <section class="presentation" style="background-image: url(img/header.jpg);">
             <div class="dark">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 presentation-left">
-                            <img src="img/webtma.jpg" alt="WebTMA">
+                            <!--<img src="img/webtma.jpg" alt="WebTMA">-->
                             <!--<p>WebTMA - система управления техническим обслуживанием и ремонтами (ТОиР)</p>-->
                             <!--<a href="#" class="btn btn-light first-button">App Store</a>-->
                             <!--<a href="#" class="btn btn-light">Google Play</a>-->
@@ -86,10 +86,10 @@
                             <h3>Получите бесплатный демо-доступ на 14 дней к WebTMA!</h3>
                             <form action="#" method="post">
                                 <input type="text" name="name" placeholder="Как к вам обращаться?">
-                                <input type="tel" name="phone" placeholder="+_(___)___-____">
+                                <!--<input type="tel" name="phone" placeholder="+_(___)___-____">-->
                                 <input type="email" name="email" placeholder="Ваш email">
-                                <input type="text" name="company" placeholder="Ваша компания">
-                                <button class="btn button-style" type="submit">Получить демо-доступ</button>
+                                <!--<input type="text" name="company" placeholder="Ваша компания">-->
+                                <button class="button-omk" type="submit"><span>Получить демо-доступ</span></button>
                             </form>
                             <!--<p class="license">Отправляя данные, вы соглашаетесь с <a href="#">политикой конфиденциальности</a> этого сайта</p>-->
                         </div>
@@ -106,7 +106,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md">
-                        <a href="#" class="btn button-style">Запишись на встречу</a>
+                        <button class="button-omk"><span>Запишись на встречу</span></button>
                         <p>Информация о встрече будет выслана на почту обратным письмом.</p>
                     </div>
                 </div>
@@ -177,7 +177,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="wrapper left">
-                            <img src="img/example.jpeg" alt="Test" align="left">
+                            <a href="img/example.jpeg" data-caption="Image caption">
+                                <img src="img/example.jpeg" alt="First image">
+                            </a>
+                            <!--<img id="funcImg1" src="img/example.jpeg" alt="Test" align="left">-->
                             <div class="right-block">
                                 <span>1</span>
                                 <p>Учет оборудования и нормативов</p>
@@ -193,7 +196,10 @@
                     <hr>
                     <div class="col-md-6">
                         <div class="wrapper right">
-                            <img src="img/example.jpeg" alt="Test" align="left">
+                            <a href="img/example.jpeg" data-caption="Image caption">
+                                <img src="img/example.jpeg" alt="First image">
+                            </a>
+                            <!--<img src="img/example.jpeg" alt="Test" align="left">-->
                             <div class="right-block">
                                 <span>2</span>
                                 <p>Учет технологических карт оборудования</p>
@@ -210,7 +216,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="wrapper left">
-                            <img src="img/example.jpeg" alt="Test" align="left">
+                            <a href="img/example.jpeg" data-caption="Image caption">
+                                <img src="img/example.jpeg" alt="First image">
+                            </a>
+                            <!--<img src="img/example.jpeg" alt="Test" align="left">-->
                             <div class="right-block">
                                 <span>3</span>
                                 <p>Планирование технического обслуживания и ремонта</p>
@@ -225,7 +234,10 @@
                     <hr class="hr-two">
                     <div class="col-md-6">
                         <div class="wrapper right">
-                            <img src="img/example.jpeg" alt="Test" align="left">
+                            <a href="img/example.jpeg" data-caption="Image caption">
+                                <img src="img/example.jpeg" alt="First image">
+                            </a>
+                            <!--<img src="img/example.jpeg" alt="Test" align="left">-->
                             <div class="right-block">
                                 <span>4</span>
                                 <p>Управление материально-техническим обеспечением</p>
@@ -238,7 +250,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="wrapper left">
-                            <img src="img/example.jpeg" alt="Test" align="left">
+                            <a href="img/example.jpeg" data-caption="Image caption">
+                                <img src="img/example.jpeg" alt="First image">
+                            </a>
+                            <!--<img src="img/example.jpeg" alt="Test" align="left">-->
                             <div class="right-block">
                                 <span>5</span>
                                 <p>Управление нарядами и работами</p>
@@ -259,7 +274,10 @@
                     <hr class="hr-three">
                     <div class="col-md-6">
                         <div class="wrapper right">
-                            <img src="img/example.jpeg" alt="Test" align="left">
+                            <a href="img/example.jpeg" data-caption="Image caption">
+                                <img src="img/example.jpeg" alt="First image">
+                            </a>
+                            <!--<img src="img/example.jpeg" alt="Test" align="left">-->
                             <div class="right-block">
                                 <span>6</span>
                                 <p>Управление персоналом</p>
@@ -312,14 +330,14 @@
                     </div>
                     <div class="col-md-7">
                         <h1>Остались вопросы?</h1>
-                        <form action="./mail.php" method="post">
+                        <form method="post">
                             <div class="input-style">
                                 <input type="text" placeholder="Как к вам обращаться?">
                             </div>
                             <div class="input-style">
                                 <input type="tel" placeholder="Телефон">
                             </div>
-                            <button class="button-style" type="submit">Отправить</button>
+                            <button class="button-omk" type="submit"><span>Отправить</span></button>
                         </form>
                     </div>
                 </div>

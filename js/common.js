@@ -18,4 +18,10 @@ $(function() {
         setEqualHeight($('.wrapper'));
     });
 
+    baguetteBox.run('.functions', {
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+        }
+    });
+
 });
