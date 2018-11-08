@@ -22,11 +22,25 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="css/main.min.css">
+    <style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
 <body>
+
+<style>
+
+</style>
+
+    <div class="preloader">
+        <div class="contain">
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+            <div class="📦"></div>
+        </div>
+    </div>
 
 	<!-- Custom HTML -->
 
@@ -34,36 +48,38 @@
 		<div class="top-line">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 text-left">
-                        <img src="img/logo.jpeg" alt="Logo">
+                    <div class="col-sm-4 text-left">
+                        <a href="/">
+                            <img src="img/logo.jpeg" alt="Logo">
+                        </a>
                     </div>
-                    <div class="col-md-6 text-center">
+                    <div class="col-sm-5 text-center">
                         <!--Текст поменьше-->
                         <p class="top-description">WebTMA - система управления техническим обслуживанием и ремонтами (ТОиР)</p>
                     </div>
-                    <div class="col-md-3 text-right">
+                    <div class="col-sm-3 text-right">
                         <a href="tel:84959228577" class="top-phone">8(495)922-85-77</a>
                     </div>
                 </div>
             </div>
 		</div>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarTogglerDemo01">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">О нас</a>
+                        <a href="#description" class="nav-link">О нас</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Преимущества</a>
+                        <a href="#advantages" class="nav-link">Преимущества</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Функции</a>
+                        <a href="#functions" class="nav-link">Функции</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Контакты</a>
+                        <a href="#contacts" class="nav-link">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -77,8 +93,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 presentation-left">
+                            <div class="success"><span>Cпасибо за заявку!</span></div>
                             <h3>Получите бесплатный демо-доступ на 14 дней к WebTMA!</h3>
-                            <form action="#" method="post">
+                            <form class="callback" method="post">
                                 <input type="text" name="name" placeholder="Как к вам обращаться?">
                                 <input type="email" name="email" placeholder="Ваш email">
                                 <button class="button-omk" type="submit"><span>Получить демо-доступ</span></button>
@@ -98,14 +115,16 @@
                         <p class="big">Оцените экономический эффект от автоматизации управления техническим обслуживанием и ремонтами инженерного оборудования за 3 месяца</p>
                     </div>
                     <div class="col-md-12">
-                        <button class="button-omk"><span>Запишись на встречу</span></button>
+                        <a href="#contacts" id="invite">
+                            <button class="button-omk"><span>Запишись на встречу</span></button>
+                        </a>
                         <p>Информация о встрече будет выслана на почту обратным письмом.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="description" style="background-color: #fff;">
+        <section class="description" id="description" style="background-color: #fff;">
             <div class="container">
                 <div class="row">
                     <h3 class="col-md-12">WebTMA - позволяет автоматизировать следующие функции</h3>
@@ -128,7 +147,7 @@
             </div>
         </section>
 
-        <section class="advantages" style="background-color: #DBEAF1;">
+        <section class="advantages" id="advantages" style="background-color: #DBEAF1;">
             <h1>Преимущества</h1>
             <div class="container">
                 <div class="row">
@@ -163,11 +182,11 @@
             </div>
         </section>
 
-        <section class="functions" style="background-color: #fff;">
+        <section class="functions" id="functions" style="background-color: #fff;">
             <h1>Основные функции</h1>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="wrapper left">
                             <div class="left-block">
                                 <a href="img/functions/1.png" data-caption="Image caption">
@@ -188,7 +207,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="wrapper right">
                             <div class="left-block">
                                 <a href="img/functions/2.png" data-caption="Image caption">
@@ -211,7 +230,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="wrapper left">
                             <div class="left-block">
                                 <a href="img/functions/3.png" data-caption="Image caption">
@@ -232,7 +251,7 @@
                         </div>
                     </div>
                     <hr class="hr-two">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="wrapper right">
                             <div class="left-block">
                                 <a href="img/functions/4.png" data-caption="Image caption">
@@ -252,7 +271,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="wrapper left">
                             <div class="left-block">
                                 <a href="img/functions/5.png" data-caption="Image caption">
@@ -274,7 +293,7 @@
                         </div>
                     </div>
                     <hr class="hr-three">
-                    <div class="col-md-6">
+                    <div class="col-lg-6">
                         <div class="wrapper right">
                             <div class="left-block">
                                 <a href="img/functions/6.png" data-caption="Image caption">
@@ -305,40 +324,41 @@
             <h1>Клиенты</h1>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <img src="img/schneider.png" alt="Schneider Electrik">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <img src="img/sber_logo.png" alt="Sberbank">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <img src="img/dataspace_logo.png" alt="Dataspace">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
                         <img src="img/croc_logo.png" alt="CROC">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contacts" style="background-image: url(img/6_FORM_bg.png)">
+        <section class="contacts" id="contacts" style="background-image: url(img/6_FORM_bg.png)">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
                         <h1>Контакты</h1>
                         <a href="tel:84959228577" class="contact-phone">+7(495)922-85-77</a>
                         <p>Общество с ограниченной ответственностью «ОМКсервис» ИНН 9729067137</p>
-                        <p>АДРЕС МЕСТОНАХОЖДЕНИЯ Москва, Хлебный переулок 2/3 стр. 2 офис 8</p>
+                        <p class="address">АДРЕС МЕСТОНАХОЖДЕНИЯ Москва, Хлебный переулок 2/3 стр. 2 офис 8</p>
                         <a href="mailto:support@omkontrol.com" class="contact-email">support@omkontrol.com</a>
                     </div>
                     <div class="col-md-7">
                         <h1>Остались вопросы?</h1>
-                        <form method="post">
-                            <div class="input-style">
-                                <input type="text" placeholder="Как к вам обращаться?">
+                        <div class="success"><span>Cпасибо за заявку!</span></div>
+                        <form class="callback" method="post">
+                            <div class="input-style" id="input-name">
+                                <input type="text" name="name" placeholder="Как к вам обращаться?">
                             </div>
-                            <div class="input-style">
-                                <input type="tel" placeholder="Телефон">
+                            <div class="input-style" id="input-phone">
+                                <input type="tel" name="phone" placeholder="Телефон">
                             </div>
                             <button class="button-omk" type="submit"><span>Отправить</span></button>
                         </form>
@@ -352,10 +372,10 @@
 	<footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-sm-8">
                     <p>© 2018 Текст, графические и фото материалы ООО «ОМКонтроль», 2009-2018</p>
                 </div>
-                <div class="col-md-4 footer-phone">
+                <div class="col-sm-4 footer-phone">
                     <a href="tel:84959228577" class="contact-phone">+7(495)922-85-77</a>
                 </div>
             </div>
@@ -363,6 +383,7 @@
     </footer>
 
 	<script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" href="css/main.min.css">
 
 </body>
 </html>
