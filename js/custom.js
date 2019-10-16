@@ -1,12 +1,5 @@
-(function ($) {
+(function($) {
   "use strict";
-  
-
-  $(document).ready(function() {
-    $('select').niceSelect();
-  });
-
-  // menu fixed js code
   $(window).scroll(function () {
     var window_top = $(window).scrollTop() + 1;
     if (window_top > 50) {
@@ -15,53 +8,110 @@
       $('.main_menu').removeClass('menu_fixed animated fadeInDown');
     }
   });
- 
+  
+  $(".popup-youtube, .popup-vimeo").magnificPopup({
+    // disableOn: 700,
+    type: "iframe",
+    mainClass: "mfp-fade",
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false
+  });
 
- $('.img_gallery').magnificPopup({
-  type: 'image',
-  gallery:{
-    enabled:true
-  }
-});
+  $(document).ready(function() {
+    $("select").niceSelect();
+  });
 
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-});
-
-$('.single_service_part').hover(
-  function(){$(this).addClass('active')},
-  function(){$(this).removeClass('active')}
-)
-
-// $('.single_service_part').hover(function(){
-//   $('.single_service_text').removeClass('active');
-//   $('.single_service_text').addClass('active');
-// });
-
-
-
-var review = $('.client_review_part');
-  if (review.length) {
-    review.owlCarousel({
-      items: 2,
+  var client_logo = $(".client_logo_slider");
+  if (client_logo.length) {
+    client_logo.owlCarousel({
+      items: 6,
       loop: true,
-      dots: true,
-      autoplay: true,
-      autoplayHoverPause: true,
-      autoplayTimeout: 5000,
-      nav: false,
-      margin: 20,
-      responsive:{
-        0:{
-            items:1,
-            dots: false
+      responsive: {
+        0: {
+          items: 3,
+          margin: 15
         },
-        600:{
-            items:2,
+        600: {
+          items: 3,
+          margin: 15
+        },
+        991: {
+          items: 5,
+          margin: 15
+        },
+        1200: {
+          items: 6,
+          margin: 15
         }
-    }
+      }
     });
   }
 
-}(jQuery));
+  $(window).on("load", function() {
+    if (document.getElementById("portfolio")) {
+      var $workGrid = $(".portfolio-grid").isotope({
+        itemSelector: ".all"
+      });
+    }
+
+    $(".portfolio-filter ul li").on("click", function() {
+      $(".portfolio-filter ul li").removeClass("active");
+      $(this).addClass("active");
+
+      var data = $(this).attr("data-filter");
+      $workGrid.isotope({
+        filter: data
+      });
+    });
+
+    var review = $(".review_part_text");
+    if (review.length) {
+      review.owlCarousel({
+        items: 2,
+        loop: true,
+        dots: true,
+        autoplay: true,
+        margin: 40,
+        autoplayHoverPause: true,
+        autoplayTimeout: 5000,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          480: {
+            items: 1
+          },
+          768: {
+            items: 2
+          }
+        }
+      });
+    }
+
+    $(".popup-youtube, .popup-vimeo").magnificPopup({
+      // disableOn: 700,
+      type: "iframe",
+      mainClass: "mfp-fade",
+      removalDelay: 160,
+      preloader: false,
+      fixedContentPos: false
+    });
+  });
+
+  $("a.nav-link").click(function(event) {
+    //отменяем стандартную обработку нажатия по ссылке
+    event.preventDefault();
+    //забираем идентификатор бока с атрибута href
+    var id  = $(this).attr('href'),
+    //узнаем высоту от начала страницы до блока на который ссылается якорь
+    top = $(id).offset().top;
+
+    console.log(id);
+    //анимируем переход на расстояние - top за 1500 мс
+    $('body,html').animate({scrollTop: +top}, 1500);
+
+  });
+
+})(jQuery);

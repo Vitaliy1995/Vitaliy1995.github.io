@@ -1,16 +1,12 @@
 /**************** extend css start ****************/
-
-// %custom_btn_bg_1{
-//     background-image: linear-gradient(to left, rgb(171,118,54) 0%, rgb(215,175,126) 100%, rgb(171,118,54) 0%);  
-// }
 %custom_btn_bg_1{
-    background-image: linear-gradient(to left, #ab7636 0%, #d7af7e 49%, #ab7636 100%);  
+    background-image: linear-gradient(to left, #ee390f 0%, #f9b700 51%, #ee390f 100%);  
 }
 
 %custom_btn_bg_2{
-    background-image: -webkit-linear-gradient( 131deg , #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
-    background-image: -o-linear-gradient( 131deg , #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);
-    background-image: linear-gradient( 131deg , #feb47b, #ff7e5f, #ff7e5f, #ff7e5f);  
+    background-image: -moz-linear-gradient( 0deg, rgb(238,57,15) 0%, rgb(249,183,0) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(238,57,15) 0%, rgb(249,183,0) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(238,57,15) 0%, rgb(249,183,0) 100%);
 }
 %custom_btn_bg_3{
     background: -moz-linear-gradient( 90deg, rgb(173,35,254) 0%, rgb(173,35,254) 0%, rgb(250,96,199) 100%);

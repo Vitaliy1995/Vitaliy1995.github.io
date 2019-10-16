@@ -1,75 +1,112 @@
-/**************** review_part css start ****************/
+/*****************Review part start******************/
 .review_part{
-  background-color: $section_bg;
-  .client_review_part{
-    .client_review_img{
-      position: relative;
-      padding-left: 70px;
-      margin-top: 40px;
-      img{
-        max-width: 50px;
+    position: relative;
+    z-index: 1;
+    .animation_icon_3{
         position: absolute;
-        left: 0;
         top: 0;
-      }
+        right: 5%;
+        @media #{$tab}{
+            display: none;
+        }
     }
-  }
-  .client_review_single {
-    .client_review_text{
-      p{
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: 300;
-      }
-      h4{
-        font-size: 14px;
-        text-transform: uppercase;
-        color: $white_color;
-        padding-top: 6px;
-        line-height: 15px;
-        margin-bottom: 0;
+    .review_part_text{
+        .client_info{
+            padding-bottom: 35px;
+            display: flow-root;
+
+            @media #{$tab}{
+                padding-bottom: 15px;
+            }
+            @media #{$medium_device}{
+            
+            }
+            img{
+                height: 90px;
+                width: 90px;
+                float: left;
+                margin-right: 30px;
+                @media #{$tab}{
+                    margin-right: 23px;
+                    height: 50px;;
+                    width: 50px;
+                }
+            }
+            h4{
+                margin-top: 19px;
+                font-weight: 600;
+                @media #{$tab}{
+                    margin-top: 0;
+                    margin-bottom: 5px;
+                }
+            }
+            p{
+                margin-top: 0px;
+            }
+        }
+        p{
+           font-weight: 400i;
+           line-height: 1.929;
+        }
+    }
+    .owl-dots {
+        text-align: center;
+        padding-top: 65px;
         @media #{$small_mobile}{
-          margin-top: 20px;
-          font-size: 20px;
+            padding-top: 30px;
         }
         @media #{$large_mobile}{
-          margin-top: 20px;    
-          font-size: 20px;
+            padding-top: 30px;
         }
         @media #{$tab_device}{
-          margin-top: 20px;    
-          font-size: 20px;
+            padding-top: 30px;
         }
         @media #{$medium_device}{
         
         }
-        span{
-          font-family: $font_stack_2;
-          font-size: 14px;
-          color: #555555;
+        button.owl-dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50px;
+            display: inline-block;
+            background: #e9eef2;
+            margin: 0 5px;
+            border: 1px solid $btn_hover;
+            &.active {
+                background-color: $btn_hover;
+            }
+            &:focus {
+                outline: #cfb579;
+            }
         }
-      }
     }
-  }
-  .review_icon{
-    i{
-      color: $btn_hover;
-    }
-  }
+    .singler_eview_part{
+        padding: 50px 40px 42px;
+        border: 1px solid #ebf0ff;
+        background-color: $white_color;
+        @include transform_time(.5s);
+        margin-bottom: 25px;
+        &:hover{
+            box-shadow: 0px 10px 50px 0px rgba(221, 221, 221, 0.35);
+            border: 1px solid #fff;
 
-  .owl-dots{
-    text-align: center;
-    margin-top: 75px;
-    button{
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: transparent;
-      margin: 5px;
-      border: 1px solid #fff;
+        }
+        @media #{$tab}{
+            padding: 20px;
+        }
     }
-    .active{
-      background-color: $white_color;
+}
+@media #{$small_mobile}{
+    .about_review{
+        margin-top: 0px;
     }
-  }
+}
+@media #{$large_mobile}{
+
+}
+@media #{$tab_device}{
+
+}
+@media #{$medium_device}{
+
 }

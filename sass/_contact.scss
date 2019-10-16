@@ -31,6 +31,7 @@
     }
   }
 }
+
 /*=================== contact banner end ====================*/
 
 
@@ -49,12 +50,11 @@
 
   .form-group{
     margin-bottom: 30px;
-  }
-  .contact-section{
-    .btn_4{
-      margin-bottom: 0px !important;
+    .btn_1{
+      margin-bottom: -30px;
     }
   }
+
   .form-control{
     border: 1px solid #f0e9ff;
     border-radius: 5px;
@@ -84,6 +84,38 @@
   // }
 }
 
+@media #{$small_mobile}{
+  .contact-section{
+    .btn_1 {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+  }
+}
+@media #{$large_mobile}{
+  .contact-section{
+    .btn_1 {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+  }
+}
+@media #{$tab_device}{
+  .contact-section{
+    .btn_1 {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+  }
+}
+@media #{$medium_device}{
+  .contact-section{
+    .btn_1 {
+      margin-bottom: 0px !important;
+      margin-top: 0px !important;
+    }
+  }
+}
 /*=================== contact form end ====================*/
 
 /* Contact Success and error Area css

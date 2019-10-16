@@ -1,150 +1,161 @@
 /**************** blog part css start ****************/
 .blog_part{
-    position: relative;
     @media #{$small_mobile}{
-        padding: 70px 0 50px;
+        padding-bottom: 50px;
     }
     @media #{$large_mobile}{
-        padding: 70px 0 50px;
+        padding-bottom: 50px;
     }
     @media #{$tab_device}{
-        padding: 70px 0 50px;
+        padding-bottom: 50px;
     }
     @media #{$medium_device}{
-    
+        padding-bottom: 50px;
     }
-   i{
-       margin-right: 5px;
-   }
-    .hover_text{
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 2;
-        padding: 65px 30px;
-        width: 100%;
-        height: 100%;
-        @include transform_time(0.5s);
-        visibility: hidden;
-        opacity: 0;
+    .card{
+        border: 0px solid transparent;
+    }
+    .blog_right_sidebar .widget_title {
+        font-size: 20px;
+        margin-bottom: 40px;
+        font-style: inherit !important; 
+    }
+    .single-home-blog{
         @media #{$small_mobile}{
-            padding: 20px;
-        }
-        @media #{$large_mobile}{
-            padding: 20px;
-        }
-        @media #{$tab_device}{
-            padding: 20px;
-        }
-        @media #{$medium_device}{
-            padding: 20px;
-        }
-        &:after{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            content: "";
-            background-color: #fff;
-            z-index: 1;
-            opacity: .9;
-        }
-       
-    }
-    .single-home-blog {
-        position: relative;
-        z-index: 99;
-    }
-    
-    .single-home-blog a {
-        color: #ab7636;
-    }
-    
-    .single-home-blog a h5 {
-        font-size: 22px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        @media #{$small_mobile}{
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        @media #{$large_mobile}{
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        @media #{$tab_device}{
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        @media #{$medium_device}{
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-    }
-    
-    .single-home-blog p {
-        color: #666666;
-    }
-    
-    .single-home-blog li {
-        display: inline-block;
-        margin-right: 27px;
-    }
-    
-    .single-home-blog li span {
-        margin-right: 5px;
-        font-size: 14px;
-        color: $btn_bg;
-    }
-    
-    .single-home-blog ul {
-        margin-top: 24px;
-    }
-} 
-.single_offer_part{
-    &:hover .hover_text{
-        opacity: 1;
-        visibility: visible;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-} 
-
-.blog_part {
-    .single_offer_part {
-        width: 100%;
-        float: left;
-        position: relative;
-        z-index: 1;
-        border-right: 10px solid #fff;
-        @media #{$small_mobile}{
-            border-right: 0px solid #fff;
             margin-bottom: 20px;
         }
         @media #{$large_mobile}{
-            border-right: 0px solid #fff;
             margin-bottom: 20px;
         }
         @media #{$tab_device}{
-            border-right: 0px solid #fff;
             margin-bottom: 20px;
         }
         @media #{$medium_device}{
         
         }
-        .single_offer{
-            img{
-                width: 100%;
+        .card-img-top{
+            border-radius: 0px;
+        }
+        .card{
+            
+            border-radius: 0px;
+            background-color: transparent;
+            position: relative;
+            .card-body{
+                padding: 30px 0 23px;
+                background-color: $white_color;
+                @include transform_time(.5s);
+
+                @media #{$small_mobile}{
+                    padding: 15px 10px;
+                }
+                @media #{$large_mobile}{
+                    padding: 15px;
+                }
+                @media #{$tab_device}{
+                
+                }
+                @media #{$medium_device}{
+                    padding: 20px;
+                }
+                .btn_4{
+                    margin-bottom: 20px;
+
+                }
+                a{
+                    text-transform: capitalize;
+                    @include transform_time(0.8s);
+                }
+            }
+            .dot{
+                position: relative;
+                padding-left: 20px;
+                &:after{
+                    position: absolute;
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    top: 5px;
+                    left: 0;
+                    background-color: $btn_bg;
+                    border-radius: 50%;
+                }
+            }
+            span{
+                color: $font_4;
+                margin-bottom: 10px;
+                display: inline-block;
+                margin-top: 10px;
+                @media #{$small_mobile}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @media #{$large_mobile}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @media #{$tab_device}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+                @media #{$medium_device}{
+                    margin-bottom: 5px;
+                    margin-top: 5px;
+                }
+            }
+            h5{
+                font-weight: 600;
+                line-height: 1.5;
+                font-size: 19px;
+                @include transform_time(0.8s);
+                text-transform: capitalize;
+                margin-bottom: 15px;
+                @media #{$small_mobile}{
+                    margin-bottom: 5px;
+                    font-size: 17px;
+                }
+                @media #{$large_mobile}{
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                }
+                @media #{$tab_device}{
+                    margin-bottom: 10px;
+                }
+                @media #{$medium_device}{
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                }
+                &:hover{
+                    @include transform_time(0.8s);
+                    color: $btn_bg;
+                }
+                
+            }
+            ul{
+                margin-bottom: 13px;
+                li{
+                    display: inline-block;
+                    color: $font_4;
+                    margin-right: 39px;
+                    @media #{$small_mobile}{
+                        margin-right: 10px;
+                    }
+                    @media #{$large_mobile}{
+                        margin-right: 10px;
+                    }
+                    @media #{$tab_device}{
+                        margin-right: 10px;
+                    }
+                    @media #{$medium_device}{
+                        margin-right: 10px;
+                    }
+                    span{
+                        margin-right: 10px;
+                    }
+                }
             }
         }
-        
-    }
-    .time{
-        margin-left: 25px;
     }
 }
+
+  
