@@ -3439,6 +3439,7 @@ ul {
   width: 90px;
   float: left;
   margin-right: 30px;
+  border-radius: 100%;
 }
 
 @media (max-width: 991px) {
@@ -6628,4 +6629,10 @@ h6 {
   padding: 0;
 }
 
+.footer_text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #262626;
+}
 /*# sourceMappingURL=../css/style.map */
