@@ -14,7 +14,7 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
-          <a href="#" class="header__link">Главная</a>
+          <a href="#main" class="header__link">Главная</a>
         </li>
 
         <li class="header__item">
@@ -47,16 +47,107 @@
   </header>
 
   <main>
-    <section>Хедер</section>
+    <section class="section" id="main">
+      <h1>Шевчук Виталий</h1>
+      <p>Привет! Меня зовут Виталий. Я веб-разработчик, давайте знакомиться!</p>
+    </section>
 
-    <section class="section" id="aboutMe">Обо мне</section>
-    <section class="section" id="achievements">Достижения</section>
-    <section class="section" id="skills">Навыки</section>
-    <section class="section" id="projects">Проекты</section>
-    <section class="section" id="contacts">Контакты</section>
-    <section class="section" id="feedback">Обратная связь</section>
+    <section class="section" id="aboutMe">
+      <div class="left">
+        <img src="" alt="" />
+      </div>
+      <div class="right">
+        <p class="title">Шевчук Виталий Геннадьевич</p>
+        <p class="subtitle">Все мы немножко fullstack...</p>
+
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error.</p>
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, error.</p>
+
+        <ul class="extra">
+          <li class="extra__item">
+            <span class="bold">Дата рождения:</span><span>25.05.1995</span>
+          </li>
+          <li class="extra__item">
+            <span class="bold">Адрес:</span><span>г. Москва, Россия</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <h2 class="section__title">Достижения</h2>
+      <div class="slider">
+        <div class="slider__item">
+          <img src="" alt="" />
+        </div>
+        <div class="slider__item">
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section__title">Навыки</h2>
+      <p class="section__subtitle">Все оценки являются субъективными и показывают уровень, который, как по мне, необходим для работы.</p>
+
+      <ul class="filters">
+        <li class="filters__item">Все</li>
+        <li class="filters__item">Html</li>
+        <li class="filters__item">Css</li>
+      </ul>
+
+      <div class="skills">
+        <div class="left">
+          <ul class="skills__list">
+            <li class="skills__list--element"></li>
+            <li class="skills__list--element"></li>
+            <li class="skills__list--element"></li>
+          </ul>
+        </div>
+        <div class="right skills__element">
+          <p class="skills__element--title">Html</p>
+          <div class="skills__element--status">90%</div>
+          <div class="skills__element--description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt dignissimos ex iste magnam, maiores maxime nobis saepe suscipit! Sint.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section__title">Проекты</h2>
+    </section>
+
+    <section class="section" id="contacts">
+      <h2 class="section__title">Контакты</h2>
+    </section>
+
+    <section class="section" id="feedback">
+      <h2 class="section__title">Обратная связь</h2>
+
+      <form class="feedback">
+        <div class="feedback__field-wrapper">
+          <label for="name">Имя</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="feedback__field-wrapper">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="feedback__field-wrapper">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+      </form>
+    </section>
   </main>
 
-  <footer>Подвал сайта</footer>
+  <footer class="footer">
+    <ul class="socials">
+      <li class="socials__element">Vk</li>
+      <li class="socials__element">Tg</li>
+    </ul>
+
+    <p class="footer__copyright">&copy; Шевчук Виталий 1995 - <span class="footer__copyright--year">2025</span></p>
+  </footer>
 </body>
 </html>

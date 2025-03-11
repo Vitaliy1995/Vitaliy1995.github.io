@@ -1,0 +1,15 @@
+html, body {
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+}
+
+.header__list {
+  display: flex;
+}
+
+.section {
+  height: 250px;
+}
